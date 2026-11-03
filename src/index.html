@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Toán Lớp 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Title -->
+        <h1 class="title">🎮 Game Toán Lớp 1</h1>
+
+        <!-- Game Area -->
+        <div class="game-area" id="gameArea">
+            <!-- Question Display -->
+            <div class="question-container">
+                <div class="question-number">
+                    Câu hỏi <span id="currentQuestion">1</span>/20
+                </div>
+
+                <div class="math-question">
+                    <span id="num1" class="number">5</span>
+                    <span class="operator">+</span>
+                    <span id="num2" class="number">3</span>
+                    <span class="equals">=</span>
+                    <span class="question-mark">?</span>
+                </div>
+            </div>
+
+            <!-- Answer Choices -->
+            <div class="choices-container">
+                <button class="choice-btn" onclick="checkAnswer(0)">
+                    <span id="choice0" class="choice-text">5</span>
+                </button>
+                <button class="choice-btn" onclick="checkAnswer(1)">
+                    <span id="choice1" class="choice-text">6</span>
+                </button>
+                <button class="choice-btn" onclick="checkAnswer(2)">
+                    <span id="choice2" class="choice-text">8</span>
+                </button>
+            </div>
+
+            <!-- Feedback -->
+            <div id="feedback" class="feedback"></div>
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div id="progressFill" class="progress-fill"></div>
+                </div>
+                <div class="progress-text">
+                    Tiến độ: <span id="progressText">0</span>%
+                </div>
+            </div>
+        </div>
+
+        <!-- Result Screen -->
+        <div class="result-area" id="resultArea" style="display: none;">
+            <div class="result-content">
+                <h2 class="result-title">🎉 Kết quả</h2>
+                <div class="result-score">
+                    Bạn trả lời đúng: <span id="finalScore">0</span>/20
+                </div>
+                <div class="result-percentage">
+                    <span id="finalPercentage">0</span>%
+                </div>
+                <button class="restart-btn" onclick="restartGame()">
+                    Chơi lại
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>

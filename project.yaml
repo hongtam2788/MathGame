@@ -1,0 +1,81 @@
+# Game Toán Lớp 1 - Project Configuration
+# Claude Code Game Studios compatible
+
+project:
+  name: "Game Toán Lớp 1"
+  description: "Simple math game for Grade 1 students - Addition practice"
+  version: "1.0.0"
+
+engine:
+  name: "web"
+  platform: "html5"
+  language: "javascript"
+  framework: "vanilla"
+
+modes:
+  rigor: "minimal"
+  workflow: "agile"
+  docs:
+    density: "terse"
+  qa:
+    level: "minimal"
+  automation: "ask-first"
+  review_mode: "solo"
+  team:
+    size: 1
+
+target:
+  platforms:
+    - "browser"
+    - "mobile"
+  supported_browsers:
+    - "chrome"
+    - "firefox"
+    - "safari"
+    - "edge"
+
+performance:
+  target_fps: 60
+  min_score_fps: 30
+  memory_budget_mb: 100
+
+directories:
+  source: "src"
+  assets: "assets"
+  design: "design"
+  tests: "tests"
+  docs: "docs"
+
+game:
+  title: "Game Toán Lớp 1"
+  genre: "Educational"
+  target_age: "6-7"
+  target_duration_minutes: "5-10"
+
+features:
+  core:
+    - "Addition practice (1+1 to 10+5)"
+    - "Multiple choice (3 options)"
+    - "Instant feedback"
+    - "20 questions per session"
+    - "Scoring system"
+    - "Progress tracking"
+  future:
+    - "Subtraction"
+    - "Multiplication"
+    - "Division"
+    - "Difficulty levels"
+    - "Sound effects"
+    - "Leaderboard"
+
+deployment:
+  github_pages: true
+  repository_template: "game-math-grade1"
+  auto_deploy: false
+
+accessibility:
+  wcag_level: "AA"
+  font_size_min_pt: 18
+  color_contrast_ratio: "4.5:1"
+  responsive: true
+  keyboard_navigation: true
